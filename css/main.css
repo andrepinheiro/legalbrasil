@@ -39,6 +39,9 @@
 .col-max {
     max-width:320px;
 }
+.modal-dialog-center {
+    margin-top: 25%;
+}
 
 body {
   background: #e5e5e5;
@@ -131,10 +134,9 @@ a:focus {
 #header {
   position: absolute;
   top: 0;
-  left: 0;
   width: 100%;
   height: 80px;
-  z-index: 99999;
+  z-index: 1;
 }
 #header img {
 	margin:7px;
@@ -149,6 +151,7 @@ a:focus {
 	color:#015b8b;
 	font-size:28px;
 	font-family:chaparral;
+	padding: 0 !important;
 }
 #header .infocontact{
 	background-image: url(../images/header-bg.png);
@@ -163,8 +166,8 @@ a:focus {
 #header .infocontact h5{
 	color:#fff;
 }
-
 /* search */
+#background,
 #search-lawyer {
 	background-image: url(../images/search-lawyer-bg.jpg);
 	background-attachment: fixed;
@@ -217,34 +220,45 @@ a:focus {
 	color:#fff;
 }
 
-/*SERVICES*/
-#services .box {
+/* global */
+.box {
 	padding: 0 15px 50px;
 	background: #fff;
 	border-bottom: 1px solid #e9e9e9;
 	position: relative;
 	margin:0 auto;
 }
-#services .box {
+.box {
     background: white;
 	box-shadow: 0 0px 0px 0px white, 0 -1px 0px 0px white, 5px 0 5px -6px #171716, -5px 0 5px -6px #171716;
 		-moz-box-shadow: 0 0px 0px 0px white, 0 -1px 0px 0px white, 5px 0 5px -6px #171716, -5px 0 5px -6px #171716;
 		-webkit-box-shadow: 0 0px 0px 0px white, 0 -1px 0px 0px white, 5px 0 5px -6px #171716, -5px 0 5px -6px #171716;
 		-o-box-shadow: 0 0px 0px 0px white, 0 -1px 0px 0px white, 5px 0 5px -6px #171716, -5px 0 5px -6px #171716;
 }
-#services .row > div {
-  margin-bottom: 50px;
-}
-#services .box.first {
+.box.first {
   margin-top: -40px;
 }
-#services .box h2 {
+.box.next {
+  margin-top: -12px;
+}
+.box h2 {
 	padding: 10px 30px 40px;
 	display: inline-block;
 	margin-bottom: 30px;
 	color:#015b8b;
 	font-family:chaparral;
 	font-size:40px;
+	text-align: center;
+}
+.separator{
+	background-color:#ececec;
+	padding: 40px 0;
+	margin-bottom: -40px !important;
+}
+
+/*SERVICES*/
+#services .row > div {
+  margin-bottom: 50px;
 }
 #services .title{
 	text-align:center;
@@ -274,10 +288,30 @@ a:focus {
 	text-align:right;
 	margin-right:8%;
 }
-#services .separator{
-	background-color:#ececec;
-	padding: 40px 0;
-	margin-bottom: -40px !important;
+#remoteModal h3{
+	margin-bottom: 0 !important;
+	padding: 0 !important;
+}
+
+/* results */
+#head-results h2{
+	padding-bottom:0px;
+}
+#results .lawyer-sheets{
+	margin-top: 20px;
+}
+#results .lawyer-sheet{
+	border: 1px solid #ababab;
+	padding: 7px;
+	background-color: #fff;
+}
+
+
+/* aside */
+aside{
+	border: 1px solid #ababab;
+	padding: 7px;
+	background-color: #fff;
 }
 
 /*ICONS*/
@@ -344,3 +378,6 @@ a:focus {
 		border:none;
 	}
 }
+
+/* temp class */
+.temp-placeholder{background-color: #cccccc;}
