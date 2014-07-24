@@ -31,22 +31,17 @@
     </header><!--/#header-->
 
 	<div id="background">
-		<h1 class="title-page">Nossa lista de professionais</h1>
+		<h1 class="title-page">Seu pedido</h1>
 	</div>
-	
+
 	<div class="container">
-		<section id="head-results">
-			<div class="box first">
-				
-				<div class="row row-centered">
-					<div class="col-sm-8 col-md-8">
-						
-					</div><!--/.col-md-8-->
-					
-					<div class="col-sm-4 col-md-4">
-						<form role="form">
-							<div class="form-group">
-								<label class="pull-left control-label">Categoria:</label>
+		<div class="box first">
+			<div class="row">
+				<section id="block_form" class="col-md-8">
+					<form id="form_request" role="form">
+						<div class="row">
+							<div class="form-group col-sm-4">
+								<label class="sr-only control-label">Categoria:</label>
 								<select class="form-control">
 									<option value="categoria">Área civil</option>
 									<option value="categoria">Direito societário e comercial</option>
@@ -58,8 +53,8 @@
 									<option value="categoria">Direito processual penal</option>
 								</select>
 							</div>
-							<div class="form-group">
-								<label class="pull-left control-label">Sub categoria:</label>
+							<div class="form-group col-sm-4">
+								<label class="sr-only control-label">Sub categoria:</label>
 								<select class="form-control">
 									<option value="subcategoria">Contrato de consórcio</option>
 									<option value="subcategoria">Contrato de financiamento casa própria</option>
@@ -72,8 +67,8 @@
 									<option value="subcategoria">Contrato de troca</option>
 								</select>
 							</div>
-							<div class="form-group">
-								<label class="pull-left control-label">Estado:</label>
+							<div class="form-group col-sm-4">
+								<label class="sr-only control-label">Estado:</label>
 								<select class="form-control">
 									<option value="filtro">Sao Paulo</option>
 									<option value="filtro">Rio de Janeiro</option>
@@ -81,73 +76,81 @@
 									<option value="filtro">Etc.</option>
 								</select>
 							</div>
-							<div class="form-group">
-								<button type="submit" class="btn btn-default">Nova pesquisa</button>
+						</div><!--/.row-->
+						
+						<hr/>
+						
+						<div class="row">
+							<div class="form-group col-xs-12 col-md-6">
+								<label for="" class="sr-only">Nome e sobrenome</label>
+								<input id="" type="text" class="form-control" placeholder="Nome e sobrenome" required="">
 							</div>
-						</form>
-					</div><!--/.col-md-4-->
-				</div><!--/.row-->
-			</div><!--/.box-->
-			<div class="separator2"></div>
-		</section><!--/#search-lawyer-->
-	</div><!--/.container-->
-
-	<div class="container">
-		<div class="box next">
-			<div class="row">
-			    <section id="results" class="col-md-8">
-					
-					<div class="lawyer-sheet">
-						<div class="col-xs-2 col-md-3">
-							<a href="#">
-								<img class="img-responsive" src="http://placehold.it/124x124">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-5 text-left">
-							<h4>Pinheiro Neto Advogados</h4>
-							<p>Areas de atuação.</p>
-						</div>
-						<div class="col-xs-4 col-md-4 text-center">
-							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
-							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
-						</div>
-						<div class="clearfix"></div>
-					</div><!--/.lawyer-sheet-->
-					
-					<div class="lawyer-sheet">
-						<div class="col-xs-2 col-md-3">
-							<a href="#">
-								<img class="img-responsive" src="http://placehold.it/124x124">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-5 text-left">
-							<h4>Pinheiro Neto Advogados</h4>
-							<p>Areas de atuação.</p>
-						</div>
-						<div class="col-xs-4 col-md-4 text-center">
-							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
-							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
-						</div>
-						<div class="clearfix"></div>
-					</div><!--/.lawyer-sheet-->
-					
-					<div class="lawyer-sheet">
-						<div class="col-xs-2 col-md-3">
-							<a href="#">
-								<img class="img-responsive" src="http://placehold.it/124x124">
-							</a>
-						</div>
-						<div class="col-xs-6 col-md-5 text-left">
-							<h4>Pinheiro Neto Advogados</h4>
-							<p>Areas de atuação.</p>
-						</div>
-						<div class="col-xs-4 col-md-4 text-center">
-							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
-							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
-						</div>
-						<div class="clearfix"></div>
-					</div><!--/.lawyer-sheet-->
-			    </section><!--/#results-->
+							<div class="form-group col-xs-12 col-md-6">
+								<label for="" class="sr-only">Telefone</label>
+								<input id="" type="text" class="form-control" placeholder="Telefone" required="">
+							</div>
+						</div><!--/.row-->
+						
+						<div class="row">
+							<div class="form-group col-xs-12 col-md-6">
+								<label class="sr-only control-label">Tipo de prestação de serviço</label>
+								<select class="form-control">
+									<option value="prestation">Tipo de prestação de serviço</option>
+									<option value="prestation">Me consultar com um advogado</option>
+									<option value="prestation">Ajuda para elaborar um documento</option>
+									<option value="prestation">Me acompanhar em um procedimento Legal</option>
+									<option value="prestation">Acompanhar um processo judicial</option>
+									<option value="prestation">Entrar em processo judicial</option>
+									<option value="prestation">Outros</option>
+								</select>
+							</div>
+							<div class="form-group col-xs-12 col-md-6">
+								<label for="" class="sr-only">Email</label>
+								<input id="" type="text" class="form-control" placeholder="Email" required="">
+							</div>
+						</div><!--/.row-->
+						
+						<div class="row">
+							<div class="form-group col-xs-12 col-md-6">
+								<label class="sr-only control-label">Urgência de sua solicitação</label>
+								<select class="form-control">
+									<option value="solicitation">Urgência de sua solicitação</option>
+									<option value="solicitation">Encontrar um advogado e com ele acertarei as condições de pagamento</option>
+									<option value="solicitation">Já me consultei antes mas quero um outra opinião</option>
+									<option value="solicitation">Busco pelo Juizado de Pequenas Causas</option>
+									<option value="solicitation">Busco por advogado gratuito</option>
+								</select>
+							</div>
+							<div class="form-group col-xs-12 col-md-6">
+								<label class="sr-only control-label">Disponibilidade para contato</label>
+								<select class="form-control">
+									<option value="availability">Preciso de um contato imediato</option>
+									<option value="availability">Ligar somente em horário comercial</option>
+								</select>
+							</div>
+						</div><!--/.row-->
+						
+						<div class="row">
+							<div class="form-group col-xs-12 col-md-12">
+								<textarea class="form-control" placeholder="Nos conte o que você precisa" rows="4"></textarea>
+							</div>
+						</div><!--/.row-->
+						
+						<div class="row">
+							<div class="form-group col-xs-6 col-md-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">Aceito as condições de utilização do site
+									</label>
+								</div>
+							</div>
+							<div class="form-group col-xs-6 col-md-6">
+								<button type="submit" class="btn btn-lg btn-default pull-right">Procurar um profissional</button>
+							</div>
+						</div><!--/.row-->
+						
+					</form>
+				</section><!--/#block_form-->
 			    
 			    <aside class="col-md-4 hidden-xs hidden-sm">
 					<img src="./js/holder.js/380x135/text:Precisa de ajuda?" class="img-responsive">
@@ -188,6 +191,6 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/holder.js"></script>
+    <script src="js/holder.js"></script>
 </body>
 </html>
