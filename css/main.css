@@ -114,18 +114,18 @@ fieldset[disabled] .btn-default.active {
 }
 
 .btn.btn-primary {
-  background-color: #52b6ec;
+  background-color: #0f6799;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary.active {
-  background-color: #1586c3;
+  background-color: #52b6ec;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 a:hover,
 a:focus {
-  color: #74ba28 !important;
+  color: #74ba28;
   text-decoration: underline;
   outline: none;
 }
@@ -167,7 +167,6 @@ a:focus {
 	color:#fff;
 }
 /* search */
-#background,
 #search-lawyer {
 	background-image: url(../images/search-lawyer-bg.jpg);
 	background-attachment: fixed;
@@ -256,6 +255,27 @@ a:focus {
 	margin-bottom: -40px !important;
 }
 
+#background {
+	background-image: url(../images/search-lawyer-bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	padding: 125px 0 60px;
+	color: #fff;
+}
+.title-page {
+	text-align:center;
+	color:white !important;
+	font-family:chaparral;
+	color:#fff;
+	font-size:3em;
+	text-shadow:0px 0px 5px rgba(23, 23, 22, 0.82);
+}
+address{
+	margin-top:5px;
+}
+
 /*SERVICES*/
 #services .row > div {
   margin-bottom: 50px;
@@ -293,26 +313,45 @@ a:focus {
 	padding: 0 !important;
 }
 
-/* results */
+/* results lawyers list */
 #head-results h2{
 	padding-bottom:0px;
 }
-#results .lawyer-sheets{
-	margin-top: 20px;
+#head-results .box.first{
+	padding-top:15px;
 }
 #results .lawyer-sheet{
-	border: 1px solid #ababab;
+	border: 1px solid #e3e3e3;
+    box-shadow: 1px 1px 0 #e3e3e3;
+		-webkit-box-shadow: 1px 1px 0 #e3e3e3;
+		-moz-box-shadow: 1px 1px 0 #e3e3e3;
+		-o-box-shadow: 1px 1px 0 #e3e3e3;
 	padding: 7px;
-	background-color: #fff;
+	background-color: #f5f5f5;
+	color:#333;
+	margin-bottom:15px;
 }
-
+#results .lawyer-sheet img{
+	padding:7px;
+	background-color:#fff;
+}
+#results .lawyer-sheet h4{
+	color:#015b8b;
+	font-family:chaparral;
+	font-weight:700;
+	margin-top:7px;
+}
+.modal-dialog.lawyer-sheet{
+	width:400px;
+}
+.modal-dialog.lawyer-sheet h4{
+	color:#015b8b;
+	font-family:chaparral;
+	font-weight:700;
+}
 
 /* aside */
-aside{
-	border: 1px solid #ababab;
-	padding: 7px;
-	background-color: #fff;
-}
+aside{}
 
 /*ICONS*/
 [class^="icon-"]{display:inline-block;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0% 0%;background-repeat:repeat;margin-top:0;width:26px;height:20px;margin-right:5px;margin-bottom:-5px;}
@@ -378,6 +417,3 @@ aside{
 		border:none;
 	}
 }
-
-/* temp class */
-.temp-placeholder{background-color: #cccccc;}

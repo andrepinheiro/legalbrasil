@@ -30,19 +30,17 @@
         </div>
     </header><!--/#header-->
 
-	<div id="background"></div>
-    <section id="head-results">
-		<div class="container">
+	<div id="background">
+		<h1 class="title-page">Nossa lista de professionais</h1>
+	</div>
+	
+	<div class="container">
+		<section id="head-results">
 			<div class="box first">
-				<div class="row row-centered">
-					<div class="col-md-12 title col-centered">
-						<h2>Nossa lista de professionais</h2>
-					</div>
-				</div><!--/.row-->
 				
 				<div class="row row-centered">
-					<div class="col-md-8 temp-placeholder">
-						<img src="http://placehold.it/1x282" class="img-responsive">
+					<div class="col-md-8">
+						<img src="./js/holder.js/730x282/text:Foto a definir" class="img-responsive hidden-xs">
 					</div><!--/.col-md-8-->
 					
 					<div class="col-md-4">
@@ -90,26 +88,81 @@
 					</div><!--/.col-md-4-->
 				</div><!--/.row-->
 			</div><!--/.box-->
-		</div><!--/.container-->
-    </section><!--/#search-lawyer-->
+		</section><!--/#search-lawyer-->
+	</div><!--/.container-->
     
 	<div class="container">
 		<div class="box next">
-			<div class="row row-centered">
+			<div class="row">
 			    <section id="results" class="col-md-8">
+					
 					<div class="lawyer-sheet">
-						<img src="http://placehold.it/108x92" class="pull-left">
-						<h3>Pinheiro & Neto</h3>
-						<address>Rua dos Pinheiros, 498, Pinheiros<br>Sao Paulo</address>
+						<div class="col-xs-2 col-md-2">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/124x124">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-6 text-left">
+							<h4>Pinheiro Neto Advogados</h4>
+							<p>Areas de atuação.</p>
+						</div>
+						<div class="col-xs-4 col-md-4 text-center">
+							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
+							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+						<div class="clearfix"></div>
+					</div><!--/.lawyer-sheet-->
+					
+					<div class="lawyer-sheet">
+						<div class="col-xs-2 col-md-2">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/124x124">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-6 text-left">
+							<h4>Pinheiro Neto Advogados</h4>
+							<p>Areas de atuação.</p>
+						</div>
+						<div class="col-xs-4 col-md-4 text-center">
+							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
+							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+						<div class="clearfix"></div>
+					</div><!--/.lawyer-sheet-->
+					
+					<div class="lawyer-sheet">
+						<div class="col-xs-2 col-md-2">
+							<a href="#">
+								<img class="img-responsive" src="http://placehold.it/124x124">
+							</a>
+						</div>
+						<div class="col-xs-6 col-md-6 text-left">
+							<h4>Pinheiro Neto Advogados</h4>
+							<p>Areas de atuação.</p>
+						</div>
+						<div class="col-xs-4 col-md-4 text-center">
+							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
+							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
+						</div>
+						<div class="clearfix"></div>
 					</div><!--/.lawyer-sheet-->
 			    </section><!--/#results-->
 			    
-			    <aside class="col-md-4">
-			    
+			    <aside class="col-md-4 hidden-xs hidden-sm">
+					<img src="./js/holder.js/380x135/text:Precisa de ajuda?" class="img-responsive">
+					<img src="./js/holder.js/380x135/text:Sobre nós" class="img-responsive">
 			    </aside>
 			</div><!--/.row-->
 		</div><!--/.box-->
 	</div><!--/.containers-->
+	
+	<!-- Modal -->  
+	<div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
+	    <div class="modal-dialog lawyer-sheet">  
+	        <div class="modal-content modal-dialog-center"></div>
+	    </div>  
+	</div>  
+	<!-- /.modal -->  
 
     <footer id="footer">
         <div class="container">
@@ -134,5 +187,6 @@
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+	<script src="js/holder.js"></script>
 </body>
 </html>
