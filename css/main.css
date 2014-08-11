@@ -42,10 +42,6 @@
 .modal-dialog-center {
     margin-top: 25%;
 }
-legend{
-	color:white;
-	border:none;
-}
 
 body {
   background: #e5e5e5;
@@ -132,6 +128,15 @@ a:focus {
   color: #74ba28;
   text-decoration: underline;
   outline: none;
+}
+
+/* form */
+legend{
+	color:white;
+	border:none;
+}
+.form-control{
+	border-radius:0 !important;
 }
 
 /* header */
@@ -390,7 +395,16 @@ address{
 .form-group.celular{
 	padding-right:0 !important;
 }
-
+#block_form legend{
+	color:#777 !important; 
+}
+#block_form .form-group{
+	marign-bottom:20px !important;
+}
+#block_form .active h4{
+	color:#fff;
+}
+#block_form .list-group-item-heading {padding:10px 0;}
 /* aside */
 aside{}
 

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Legal Brasil</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<script src="js/respond.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico"></head><!--/head-->
+
+<body>
+    <header id="header" role="banner">
+        <div class="container">
+			<div class="box">
+				<div class="row row-offset-0">
+					<div class="col-xs-6 col-md-3"><a href="index.html"><img src="images/logo.png" /></a></div>
+					<div class="col-xs-6 col-md-3"><h2 class="text-center">Consultas jurídicas personalizadas</h2></div>
+					<div class="col-md-6 text-center infocontact visible-md visible-lg">
+						<h4>Precisa de ajuda?</h4>
+						<h5>Nosso serviço de atendimento está à sua disposição</h5>
+						<p>Seg a Sex 09h-18h <strong>(11)3957-3113</strong></p>
+					</div>
+				</div>
+			</div>
+        </div>
+    </header><!--/#header-->
+
+	<div id="background">
+		<h1 class="title-page">Sua solicitação</h1>
+	</div>
+
+	<div class="container">
+		<div class="box first">
+			<div class="row">
+				<section id="block_form" class="col-md-8">
+				
+						<div class="row form-group">
+							<div class="col-xs-12">
+								<ul class="nav nav-pills nav-justified thumbnail setup-panel">
+									<li class="active"><a href="#step-1">
+										<h4 class="list-group-item-heading">1. Preencha sua solicitação</h4>
+									</a></li>
+									<li class="disabled"><a href="#step-2">
+										<h4 class="list-group-item-heading">2. Preencha seus dados</h4>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+	
+					<form id="form_request" role="form">
+						<div class="row setup-content" id="step-1">
+							<div class="form-group col-sm-6">
+								<label class="control-label">Indique a categoria:</label>
+								<select class="form-control">
+									<option value="categoria"></option>
+									<option value="categoria">Área civil</option>
+									<option value="categoria">Direito societário e comercial</option>
+									<option value="categoria">Direito de família e sucessões</option>
+									<option value="categoria">Previdenciário trabalhista</option>
+									<option value="categoria">Direito do consumidor</option>
+									<option value="categoria">Direito fiscal e tributário</option>
+									<option value="categoria">Direito de estrangeiros e imigrantes</option>
+									<option value="categoria">Direito processual penal</option>
+								</select>
+							</div>
+							<div class="form-group col-sm-6">
+								<label class="control-label">Indique a subcategoria:</label>
+								<select class="form-control">
+									<option value="subcategoria"></option>
+									<option value="subcategoria">Contrato de consórcio</option>
+									<option value="subcategoria">Contrato de financiamento casa própria</option>
+									<option value="subcategoria">Contrato de hipoteca</option>
+									<option value="subcategoria">Contrato de incorporação imobiliária</option>
+									<option value="subcategoria">Contrato de locação</option>
+									<option value="subcategoria">Contrato de penhora</option>
+									<option value="subcategoria">Contrato de permuta</option>
+									<option value="subcategoria">Contrato de seguro</option>
+									<option value="subcategoria">Contrato de troca</option>
+								</select>
+							</div>
+							<div class="form-group col-xs-12 col-md-6">
+								<label class="control-label">Tipo de prestação de serviço</label>
+								<select class="form-control">
+									<option value="prestation"></option>
+									<option value="prestation">Me consultar com um advogado</option>
+									<option value="prestation">Ajuda para elaborar um documento</option>
+									<option value="prestation">Me acompanhar em um procedimento Legal</option>
+									<option value="prestation">Acompanhar um processo judicial</option>
+									<option value="prestation">Entrar em processo judicial</option>
+									<option value="prestation">Outros</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="control-label">Urgência de sua solicitação</label>
+								<select class="form-control">
+									<option value="solicitation"></option>
+									<option value="solicitation">Modalidade de Contratação</option>
+									<option value="solicitation">Encontrar um advogado e com ele acertarei as condições de pagamento</option>
+									<option value="solicitation">Já me consultei antes mas quero um outra opinião</option>
+									<option value="solicitation">Busco pelo Juizado de Pequenas Causas</option>
+									<option value="solicitation">Busco por advogado gratuito</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="control-label">Indique o estado:</label>
+								<select class="form-control">
+									<option value="filtro"></option>
+									<option value="filtro">Sao Paulo</option>
+									<option value="filtro">Rio de Janeiro</option>
+									<option value="filtro">Amazonas</option>
+									<option value="filtro">Etc.</option>
+								</select>
+							</div>
+							<div class="form-group col-md-6">
+								<label class="control-label">Disponibilidade para contato:</label>
+								<select class="form-control">
+									<option value="availability"></option>
+									<option value="availability">Urgência de sua solicitação</option>
+									<option value="availability">Preciso de um contato imediato</option>
+									<option value="availability">Ligar somente em horário comercial</option>
+								</select>
+							</div>
+							<div class="form-group col-xs-12 col-md-12">
+								<textarea class="form-control" placeholder="Nos conte o que você precisa" rows="4"></textarea>
+							</div>
+							<button type="submit" id="activate-step-2" class="btn btn-lg btn-default pull-right">Próximo</button>
+						</div><!--/#step-1 -->
+	
+						<div class="row setup-content" id="step-2">
+							<div class="form-group col-xs-12 col-md-6">
+								<label for="">Nome</label>
+								<input id="" type="text" class="form-control" required="">
+							</div>
+							<div class="form-group col-xs-12 col-md-6">
+								<label for="">Sobrenome</label>
+								<input id="" type="text" class="form-control" required="">
+							</div>
+							<div class="col-xs-12 col-md-6">
+								<div class="form-group col-xs-3 ddd">
+									<label for="">DDD</label>
+									<input id="" type="text" class="form-control" required="">
+								</div>
+								<div class="form-group col-xs-9 celular">
+									<label for="">Telefone</label>
+									<input id="" type="text" class="form-control" required="">
+								</div>
+							</div>
+							<div class="form-group col-xs-12 col-md-6">
+								<label for="">Email</label>
+								<input id="" type="text" class="form-control" required="">
+							</div>
+						
+							<div class="form-group col-xs-6 col-md-6">
+								<div class="checkbox">
+									<label>
+										<input type="checkbox" value="">Aceito as condições de utilização do site
+									</label>
+								</div>
+							</div>
+							<div class="form-group col-xs-6 col-md-12">
+								<button type="submit" class="btn btn-lg btn-default pull-right">Enviar sua solicitação</button>
+							</div>
+						</div><!--/#step-2 -->
+					</form>
+				</section><!--/#block_form-->
+			    
+			    <aside class="col-md-4 hidden-xs hidden-sm">
+					<img src="./js/holder.js/380x135/text:Precisa de ajuda?" class="img-responsive">
+					<img src="./js/holder.js/380x135/text:Sobre nós" class="img-responsive">
+			    </aside>
+			</div><!--/.row-->
+		</div><!--/.box-->
+	</div><!--/.containers-->
+	
+	<!-- Modal -->  
+	<div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
+	    <div class="modal-dialog lawyer-sheet">  
+	        <div class="modal-content modal-dialog-center"></div>
+	    </div>  
+	</div>  
+	<!-- /.modal -->  
+
+    <footer id="footer">
+        <div class="container">
+            <div class="row row-centered">
+                <div class="col-xs-6 col-sm-4 col-centered">	
+					<img src="./images/footer-logo.png" alt="Legal Brasil" title="Legal Brasil" class="img-responsive" />
+                </div>
+                <div class="col-xs-6 col-sm-4 col-centered">
+					<ul class="list-unstyled">
+						<li><i class="icon-about"></i> <a href="#">Sobre nós</a></li>
+						<li><i class="icon-help"></i> <a href="#">Centro de ajuda</a></li>
+						<li><i class="icon-privacy"></i> <a href="#">Política de privacidade</a></li>
+					</ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-centered text-center">
+                    <h4>Você é um profissional?</h4>
+					<a href="#">Inscreva-se aqui e conheça as vantagens<br/>de fazer parte de nossa rede de especialistas</a>
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder.js"></script>
+	
+<script>
+
+$(document).ready(function() {
+    
+    var navListItems = $('ul.setup-panel li a'),
+        allWells = $('.setup-content');
+
+    allWells.hide();
+
+    navListItems.click(function(e){
+        e.preventDefault();
+        var $target = $($(this).attr('href')),
+            $item = $(this).closest('li');
+        
+        if (!$item.hasClass('disabled')) {
+            navListItems.closest('li').removeClass('active');
+            $item.addClass('active');
+            allWells.hide();
+            $target.show();
+        }
+    });
+    
+    $('ul.setup-panel li.active a').trigger('click');
+    
+    $('#activate-step-2').on('click', function(e) {
+        $('ul.setup-panel li:eq(1)').removeClass('disabled');
+        $('ul.setup-panel li a[href="#step-2"]').trigger('click');
+        $(this).remove();
+    })    
+});
+
+
+
+</script>
+	
+</body>
+</html>
