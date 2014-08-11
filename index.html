@@ -38,10 +38,12 @@
 				<div class="row row-centered">
 					<form id="search-form" class="search-form" name="search-form" method="post" action="lawyers-results.html" role="form">
 						<div class="col-md-6">
+							<legend>Procure em nosso anuário:</legend>
 							<div class="col-md-6">
 								<div class="form-group">
 									<label class="text-left control-label">Categoria:</label>
 									<select class="form-control">
+										<option value="categoria">Indique a categoria</option>
 										<option value="categoria">Área civil</option>
 										<option value="categoria">Direito societário e comercial</option>
 										<option value="categoria">Direito de família e sucessões</option>
@@ -55,6 +57,7 @@
 								<div class="form-group">
 									<label class="text-left control-label">Estado:</label>
 									<select class="form-control">
+										<option value="filtro">Indique o estado</option>
 										<option value="filtro">Sao Paulo</option>
 										<option value="filtro">Rio de Janeiro</option>
 										<option value="filtro">Amazonas</option>
@@ -66,6 +69,7 @@
 								<div class="form-group">
 									<label class="text-left control-label">Sub categoria:</label>
 									<select class="form-control">
+										<option value="subcategoria">Indique a subcategoria</option>
 										<option value="subcategoria">Contrato de consórcio</option>
 										<option value="subcategoria">Contrato de financiamento casa própria</option>
 										<option value="subcategoria">Contrato de hipoteca</option>
@@ -78,7 +82,17 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<button type="submit" class="btn btn-default ">Procurar um profissional</button>
+									<label class="text-left control-label">Cidade:</label>
+									<select class="form-control">
+										<option value="filtro">Indique a cidade</option>
+										<option value="filtro">Sao Paulo</option>
+										<option value="filtro">Rio de Janeiro</option>
+										<option value="filtro">Amazonas</option>
+										<option value="filtro">Etc.</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-default ">Procurar advogado</button>
 								</div>
 							</div>
 						</div>
@@ -89,8 +103,9 @@
 					</div>
 		
 					<div class="col-xs-12 col-md-3 solicitation">
-						<p>Envie sua solicitação para<br/><strong>5 especialistas diferentes</strong><br/>em um só click!</p>
-						<button type="button" class="btn btn-default">Preencher solicitação</button>
+						<legend>Nós te ajudamos a encontrar o advogado correto:</legend>
+						<p>Preencha uma solicitação e nós enviamos <strong>gratuitamente</strong> para advogados especializados em seu caso!</p>
+						<a href="#" class="btn btn-default">Preencher solicitação</a>
 					</div>
 					
 				</div>
@@ -113,6 +128,7 @@
 							<li><a href="#">Responsabilidade Civil</a></li>
 							<li><a href="#">Empresarial e societário</a></li>
 							<li><a href="#">Dano moral e Indenizações</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -125,7 +141,8 @@
 							<li><a href="#">Constituição de sociedade</a></li>
 							<li><a href="#">Dissolução sociedade</a></li>
 							<li><a href="#">Formulação de contratos comerciais</a></li>
-							<li><a href="#">Falêcnis</a></li>
+							<li><a href="#">Falências</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -139,6 +156,7 @@
 							<li><a href="#">Casamento</a></li>
 							<li><a href="#">Questões que afetam crianças</a></li>
 							<li><a href="#">Testamento</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -155,6 +173,7 @@
 							<li><a href="#">Responsabilidade Civil</a></li>
 							<li><a href="#">Empresarial e societário</a></li>
 							<li><a href="#">Dano moral e Indenizações</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -168,6 +187,7 @@
 							<li><a href="#">Rescisão</a></li>
 							<li><a href="#">Acidentes de trabalho</a></li>
 							<li><a href="#">Empregada doméstica</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -181,6 +201,7 @@
 							<li><a href="#">Código de proteção do consumidor</a></li>
 							<li><a href="#">Lei do Arrependimento</a></li>
 							<li><a href="#">Contratos</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -197,6 +218,7 @@
 							<li><a href="#">Vistos e status de permanência</a></li>
 							<li><a href="#">Lei de Imigração</a></li>
 							<li><a href="#">Contrato de trabalho</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -210,6 +232,7 @@
 							<li><a href="#">Lei das Drogas</a></li>
 							<li><a href="#">Habeas Corpus</a></li>
 							<li><a href="#">Pedido de Liberdade provisória</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -223,6 +246,7 @@
 							<li><a href="#">Direito Internacional</a></li>
 							<li><a href="#">Direito Penal</a></li>
 							<li><a href="#">Direito da Mulher</a></li>
+							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
 							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
