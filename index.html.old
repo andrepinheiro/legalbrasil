@@ -31,16 +31,83 @@
         </div>
     </header><!--/#header-->
 
-    <section id="search-lawyer" class="v2">
+    <section id="search-lawyer">
+		<h1>Encontre advogados em todo o Brasil!</h1>
 		
 		<div class="container">
 				<div class="row row-centered">
-					<h1>Encontre advogados em todo o Brasil!</h1>
-					<h4>Preencha uma solicitação e nós enviamos <strong>gratuitamente</strong> para advogados especializados em seu caso!</h4>
-					
-					<div class="col-md-6 pull-right">
-						<a href="form-2.html" class="btn btn-lg btn-default pull-right">Preencher sua solicitação</a>
+					<form id="search-form" class="search-form" name="search-form" method="post" action="lawyers-results.html" role="form">
+						<div class="col-md-6">
+							<legend>Procure em nosso anuário:</legend>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="text-left control-label">Categoria:</label>
+									<select class="form-control">
+										<option value="categoria">Indique a categoria</option>
+										<option value="categoria">Área civil</option>
+										<option value="categoria">Direito societário e comercial</option>
+										<option value="categoria">Direito de família e sucessões</option>
+										<option value="categoria">Previdenciário trabalhista</option>
+										<option value="categoria">Direito do consumidor</option>
+										<option value="categoria">Direito fiscal e tributário</option>
+										<option value="categoria">Direito de estrangeiros e imigrantes</option>
+										<option value="categoria">Direito processual penal</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label class="text-left control-label">Estado:</label>
+									<select class="form-control">
+										<option value="filtro">Indique o estado</option>
+										<option value="filtro">Sao Paulo</option>
+										<option value="filtro">Rio de Janeiro</option>
+										<option value="filtro">Amazonas</option>
+										<option value="filtro">Etc.</option>
+									</select>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group">
+									<label class="text-left control-label">Sub categoria:</label>
+									<select class="form-control">
+										<option value="subcategoria">Indique a subcategoria</option>
+										<option value="subcategoria">Contrato de consórcio</option>
+										<option value="subcategoria">Contrato de financiamento casa própria</option>
+										<option value="subcategoria">Contrato de hipoteca</option>
+										<option value="subcategoria">Contrato de incorporação imobiliária</option>
+										<option value="subcategoria">Contrato de locação</option>
+										<option value="subcategoria">Contrato de penhora</option>
+										<option value="subcategoria">Contrato de permuta</option>
+										<option value="subcategoria">Contrato de seguro</option>
+										<option value="subcategoria">Contrato de troca</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label class="text-left control-label">Cidade:</label>
+									<select class="form-control">
+										<option value="filtro">Indique a cidade</option>
+										<option value="filtro">Sao Paulo</option>
+										<option value="filtro">Rio de Janeiro</option>
+										<option value="filtro">Amazonas</option>
+										<option value="filtro">Etc.</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-default ">Procurar advogado</button>
+								</div>
+							</div>
+						</div>
+					</form>
+		
+					<div class="col-xs-12 col-md-3 or-arrow">
+						ou
 					</div>
+		
+					<div class="col-xs-12 col-md-3 solicitation">
+						<legend>Nós te ajudamos a encontrar o advogado correto:</legend>
+						<p>Preencha uma solicitação e nós enviamos <strong>gratuitamente</strong> para advogados especializados em seu caso!</p>
+						<a href="#" class="btn btn-default">Preencher solicitação</a>
+					</div>
+					
 				</div>
 		</div>
 		

@@ -1,56 +1,21 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Legal Brasil</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<script src="js/respond.min.js"></script>
-    <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico"></head><!--/head-->
-
-<body>
-    <header id="header" role="banner">
-        <div class="container">
-			<div class="box">
-				<div class="row row-offset-0">
-					<div class="col-xs-6 col-md-3"><a href="index.html"><img src="images/logo.png" /></a></div>
-					<div class="col-xs-6 col-md-3"><h2 class="text-center">Consultas jurídicas personalizadas</h2></div>
-					<div class="col-md-6 text-center infocontact visible-md visible-lg">
-						<h4>Precisa de ajuda?</h4>
-						<h5>Nosso serviço de atendimento está à sua disposição</h5>
-						<p>Seg a Sex 09h-18h <strong>(11)3957-3113</strong></p>
-					</div>
-				</div>
-			</div>
-        </div>
-    </header><!--/#header-->
-
-	<div id="background">
-		<h1 class="title-page">Sua solicitação</h1>
-	</div>
-
-	<div class="container">
-		<div class="box first">
-			<div class="row">
-				<section id="block_form" class="col-md-8">
-				
-						<div class="row form-group">
-							<div class="col-xs-12">
-								<ul class="nav nav-pills nav-justified thumbnail setup-panel">
-									<li class="active"><a href="#step-1">
-										<h4 class="list-group-item-heading">1. Preencha sua solicitação</h4>
-									</a></li>
-									<li class="disabled"><a href="#step-2">
-										<h4 class="list-group-item-heading">2. Preencha seus dados</h4>
-									</a></li>
-								</ul>
-							</div>
+<div class="modal-header">
+	<h4>Pinheiro Neto Advogados</h4>
+	<p>Envia sua solicitação direitamente.</p>
+</div>  
+<div class="modal-body">
+			
+					<div class="row form-group">
+						<div class="col-xs-12">
+							<ul class="nav nav-pills nav-justified thumbnail setup-panel">
+								<li class="active"><a href="#step-1">
+									<h4 class="list-group-item-heading">1. Preencha sua solicitação</h4>
+								</a></li>
+								<li class="disabled step2"><a href="#step-2">
+									<h4 class="list-group-item-heading">2. Preencha seus dados</h4>
+								</a></li>
+							</ul>
 						</div>
+					</div>
 	
 					<form id="form_request" role="form">
 						<div class="row setup-content" id="step-1">
@@ -167,53 +132,16 @@
 							</div>
 						</div><!--/#step-2 -->
 					</form>
-				</section><!--/#block_form-->
-			    
-			    <aside class="col-md-4 hidden-xs hidden-sm">
-					<img src="./js/holder.js/380x135/text:Precisa de ajuda?" class="img-responsive">
-					<img src="./js/holder.js/380x135/text:Sobre nós" class="img-responsive">
-			    </aside>
-			</div><!--/.row-->
-		</div><!--/.box-->
-	</div><!--/.containers-->
-	
-	<!-- Modal -->  
-	<div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
-	    <div class="modal-dialog lawyer-sheet">  
-	        <div class="modal-content modal-dialog-center"></div>
-	    </div>  
-	</div>  
-	<!-- /.modal -->  
-
-    <footer id="footer">
-        <div class="container">
-            <div class="row row-centered">
-                <div class="col-xs-6 col-sm-4 col-centered">	
-					<img src="./images/footer-logo.png" alt="Legal Brasil" title="Legal Brasil" class="img-responsive" />
-                </div>
-                <div class="col-xs-6 col-sm-4 col-centered">
-					<ul class="list-unstyled">
-						<li><i class="icon-about"></i> <a href="#">Sobre nós</a></li>
-						<li><i class="icon-help"></i> <a href="#">Centro de ajuda</a></li>
-						<li><i class="icon-privacy"></i> <a href="#">Política de privacidade</a></li>
-					</ul>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-centered text-center">
-                    <h4>Você é um profissional?</h4>
-					<a href="#">Inscreva-se aqui e conheça as vantagens<br/>de fazer parte de nossa rede de especialistas</a>
-                </div>
-            </div>
-        </div>
-    </footer><!--/#footer-->
-
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/holder.js"></script>
+              
+</div>  
+<div class="modal-footer">  
+    <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>   -->
+</div>  
 	
 <script>
 
 $(document).ready(function() {
-    
+    $('#step-2').hide();
     var navListItems = $('ul.setup-panel li a'),
         allWells = $('.setup-content');
 
@@ -238,12 +166,9 @@ $(document).ready(function() {
         $('ul.setup-panel li:eq(1)').removeClass('disabled');
         $('ul.setup-panel li a[href="#step-2"]').trigger('click');
         $(this).remove();
-    })    
+    })
 });
 
 
 
 </script>
-	
-</body>
-</html>

@@ -40,7 +40,7 @@
     max-width:320px;
 }
 .modal-dialog-center {
-    margin-top: 25%;
+    margin-top: 0;
 }
 
 body {
@@ -233,10 +233,16 @@ legend{
 	#search-lawyer.v2 h1{
 		margin-bottom:0 !important;}
 	#search-lawyer.v2 h2, #search-lawyer.v2 h4{
-		color:#fff !important;}
+		color:#fff !important;
+		line-height:1.6em}
 	#search-lawyer.v2 h4{
 		margin:25px 0;}
 			#search-lawyer.v2 h4 strong{
+				color:#fff;}
+			
+			#search-lawyer.v2 .col-md-12:last-child p{
+				padding-top:10px;}
+			#search-lawyer.v2 .col-md-12:last-child a{
 				color:#fff;}
 				
 		#search-lawyer.v2 form .form-control{
@@ -385,22 +391,32 @@ address{
 	font-family:chaparral;
 	font-weight:700;
 }
+	.modal-dialog.lawyer-sheet-form{
+		width:40%}
 
+
+		
 /* form */
 #block_form{
 	padding-top:15px; }
-	#block_form .list-group-item-heading {
+	#block_form .list-group-item-heading,
+	.lawyer-sheet-form .list-group-item-heading {
 		padding:0; }
-	#block_form .active h4{
+	#block_form .active h4,
+	.lawyer-sheet-form .active h4{
 		color:#fff; }
-	#block_form legend{
+	#block_form legend,
+	.lawyer-sheet-form legend{
 		color:#777 !important; }
-	#block_form .form-group.ddd{
+	#block_form .form-group.ddd,
+	.lawyer-sheet-form .form-group.ddd{
 		padding-right:0 !important;
 		padding-left:0 !important; }
-	#block_form .form-group.celular{
+	#block_form .form-group.celular,
+	.lawyer-sheet-form .form-group.celular{
 		padding-right:0 !important; }
-	#block_form .form-group{
+	#block_form .form-group,
+	.lawyer-sheet-form .form-group{
 		marign-bottom:20px !important;
 	}
 	
@@ -546,8 +562,9 @@ aside{}
 #footer li{
 	line-height:2em;
 }
-#footer div.col-sm-4:nth-last-child(-n+2){
+#footer div.col-sm-4:nth-last-child(2){
 	border-left:1px dotted #c3c3c3;
+	border-right:1px dotted #c3c3c3;
 	height:100px;
 	padding-left:40px;
 }

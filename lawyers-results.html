@@ -39,15 +39,12 @@
 			<div class="box first">
 				
 				<div class="row row-centered">
-					<div class="col-sm-8 col-md-8">
-						<img src="./images/469722645.jpg" class="img-responsive">
-					</div><!--/.col-md-8-->
-					
-					<div class="col-sm-4 col-md-4">
-						<form role="form">
-							<div class="form-group text-left">
-								<label class="control-label">Categoria:</label>
+					<div class="col-md-12">
+						<form role="form" class="form-inline">
+							<div class="form-group">
+								<label class="control-label sr-only">Categoria:</label>
 								<select class="form-control">
+									<option value="categoria">Indique a Categoria</option>
 									<option value="categoria">Área civil</option>
 									<option value="categoria">Direito societário e comercial</option>
 									<option value="categoria">Direito de família e sucessões</option>
@@ -58,8 +55,8 @@
 									<option value="categoria">Direito processual penal</option>
 								</select>
 							</div>
-							<div class="form-group text-left">
-								<label class="control-label">Sub categoria:</label>
+							<div class="form-group">
+								<label class="control-label sr-only">Sub categoria:</label>
 								<select class="form-control">
 									<option value="subcategoria">Indique a subcategoria</option>
 									<option value="subcategoria">Contrato de consórcio</option>
@@ -73,9 +70,10 @@
 									<option value="subcategoria">Contrato de troca</option>
 								</select>
 							</div>
-							<div class="form-group text-left">
-								<label class="control-label">Estado:</label>
+							<div class="form-group">
+								<label class="control-label sr-only">Estado:</label>
 								<select class="form-control">
+									<option value="filtro">EScolhe o estado</option>
 									<option value="filtro">Sao Paulo</option>
 									<option value="filtro">Rio de Janeiro</option>
 									<option value="filtro">Amazonas</option>
@@ -83,7 +81,7 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-default">Nova pesquisa</button>
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
 							</div>
 						</form>
 					</div><!--/.col-md-4-->
@@ -110,7 +108,7 @@
 						</div>
 						<div class="col-xs-4 col-md-4 text-center">
 							<address>Rua Hungria, 1.100<br>01455-906 São Paulo, SP</address>
-							<a href="./modal/lawyer-sheet.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="./modal/form-lead.html" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#remoteModal2">Entrar em contato <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
 						<div class="clearfix"></div>
 					</div><!--/.lawyer-sheet-->
@@ -152,6 +150,7 @@
 			    
 			    <aside class="col-md-4 hidden-xs hidden-sm">
 					<img src="./js/holder.js/380x135/text:Precisa de ajuda?" class="img-responsive">
+					<img src="./js/holder.js/380x135/text:Você é um profissional?" class="img-responsive">
 					<img src="./js/holder.js/380x135/text:Sobre nós" class="img-responsive">
 			    </aside>
 			</div><!--/.row-->
@@ -161,6 +160,11 @@
 	<!-- Modal -->  
 	<div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
 	    <div class="modal-dialog lawyer-sheet">  
+	        <div class="modal-content modal-dialog-center"></div>
+	    </div>  
+	</div>  
+	<div class="modal fade" id="remoteModal2" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
+	    <div class="modal-dialog lawyer-sheet-form">  
 	        <div class="modal-content modal-dialog-center"></div>
 	    </div>  
 	</div>  
@@ -181,7 +185,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-4 col-centered text-center">
                     <h4>Você é um profissional?</h4>
-					<a href="#">Inscreva-se aqui e conheça as vantagens<br/>de fazer parte de nossa rede de especialistas</a>
+					<a href="lawyers-subscription.html">Inscreva-se aqui e conheça as vantagens<br/>de fazer parte de nossa rede de especialistas</a>
                 </div>
             </div>
         </div>
@@ -190,5 +194,6 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/holder.js"></script>
+	
 </body>
 </html>
