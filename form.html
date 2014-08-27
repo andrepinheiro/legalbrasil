@@ -19,7 +19,7 @@
 			<div class="box">
 				<div class="row row-offset-0">
 					<div class="col-xs-6 col-md-3"><a href="index.html"><img src="images/logo.png" /></a></div>
-					<div class="col-xs-6 col-md-3"><h2 class="text-center">Consultas jurídicas personalizadas</h2></div>
+					<div class="col-xs-6 col-md-3"><h2 class="text-center"></h2></div>
 					<div class="col-md-6 text-center infocontact visible-md visible-lg">
 						<h4>Precisa de ajuda?</h4>
 						<h5>Nosso serviço de atendimento está à sua disposição</h5>
@@ -43,7 +43,7 @@
 							<div class="col-xs-12">
 								<ul class="nav nav-pills nav-justified thumbnail setup-panel">
 									<li class="active"><a href="#step-1">
-										<h4 class="list-group-item-heading">1. Preencha sua solicitação</h4>
+										<h4 class="list-group-item-heading">1. Detalhes de sua solicitação</h4>
 									</a></li>
 									<li class="disabled step2"><a href="#step-2">
 										<h4 class="list-group-item-heading">2. Preencha seus dados</h4>
@@ -106,13 +106,23 @@
 									<option value="solicitation">Busco por advogado gratuito</option>
 								</select>
 							</div>
-							<div class="form-group col-md-6">
+							<div class="form-group col-md-3">
 								<label class="control-label">Indique o estado:</label>
 								<select class="form-control">
 									<option value="filtro"></option>
 									<option value="filtro">Sao Paulo</option>
 									<option value="filtro">Rio de Janeiro</option>
 									<option value="filtro">Amazonas</option>
+									<option value="filtro">Etc.</option>
+								</select>
+							</div>
+							<div class="form-group col-md-3">
+								<label class="control-label">Indique a cidade:</label>
+								<select class="form-control">
+									<option value="filtro"></option>
+									<option value="filtro">Sao Paulo</option>
+									<option value="filtro">Rio de Janeiro</option>
+									<option value="filtro">Manaus</option>
 									<option value="filtro">Etc.</option>
 								</select>
 							</div>
@@ -126,9 +136,9 @@
 								</select>
 							</div>
 							<div class="form-group col-xs-12 col-md-12">
-								<textarea class="form-control" placeholder="Nos conte o que você precisa" rows="4"></textarea>
+								<textarea class="form-control" placeholder="Conte-nos brevemente sobre seu caso e do que necessita" rows="4"></textarea>
 							</div>
-							<button type="submit" id="activate-step-2" class="btn btn-lg btn-default pull-right">Próximo</button>
+							<button type="submit" id="activate-step-2" class="btn btn-lg btn-default pull-right">Próximo <span class="glyphicon glyphicon-chevron-right"></span></button>
 						</div><!--/#step-1 -->
 	
 						<div class="row setup-content" id="step-2">

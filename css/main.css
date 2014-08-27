@@ -2,11 +2,11 @@
 
 @font-face {
 	font-family: 'chaparral';
-	src: url('fonts/chaparral/chaparralpro-regular.eot');
-	src: url('fonts/chaparral/chaparralpro-regular.otf') format('truetype'),
-		 url('fonts/chaparral/chaparralpro-regular.woff') format('woff'),
-		 url('fonts/chaparral/chaparralpro-regular.eot?#iefix') format('embedded-opentype'),
-		 url('fonts/chaparral/chaparralpro-regular.svg#QuadrantaBold') format('svg');
+	src: url('../fonts/chaparral/chaparralpro-regular.eot');
+	src: url('../fonts/chaparral/chaparralpro-regular.otf') format('truetype'),
+		 url('../fonts/chaparral/chaparralpro-regular.woff') format('woff'),
+		 url('../fonts/chaparral/chaparralpro-regular.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/chaparral/chaparralpro-regular.svg#QuadrantaBold') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -201,7 +201,7 @@ legend{
 		color:#fff;
 		text-align:center;
 		font-family:chaparral;
-		font-size:4em;
+		font-size:3.8em;
 		text-shadow:0px 0px 5px rgba(23, 23, 22, 0.82);
 		margin-bottom:50px; }
 	#search-lawyer .or-arrow{
@@ -248,6 +248,16 @@ legend{
 		#search-lawyer.v2 form .form-control{
 			height:35px !important;
 			padding:8px 10px;}
+			
+	#search-lawyer.v2 .aligncenter{
+		display: inline-block;
+		vertical-align: middle;
+		float: none;}
+		
+		#search-lawyer.v2 .aligncenter p:first-child{
+			line-height:10em;}
+		#search-lawyer.v2 .aligncenter p:last-child a{
+			color:#fff;}
 
 /* global */
 .box {
@@ -360,45 +370,47 @@ address{
 	padding-bottom:15px;
 }
 #results{
-	padding-top:15px;
-}
-#results .lawyer-sheet{
-	border: 1px solid #e3e3e3;
-    box-shadow: 1px 1px 0 #e3e3e3;
-		-webkit-box-shadow: 1px 1px 0 #e3e3e3;
-		-moz-box-shadow: 1px 1px 0 #e3e3e3;
-		-o-box-shadow: 1px 1px 0 #e3e3e3;
-	padding: 7px;
-	background-color: #f5f5f5;
-	color:#333;
-	margin-bottom:15px;
-}
-#results .lawyer-sheet img{
-	padding:7px;
-	background-color:#fff;
-}
-#results .lawyer-sheet h4{
-	color:#015b8b;
-	font-family:chaparral;
-	font-weight:700;
-	margin-top:7px;
-}
-.modal-dialog.lawyer-sheet{
-	width:400px;
-}
-.modal-dialog.lawyer-sheet h4{
-	color:#015b8b;
-	font-family:chaparral;
-	font-weight:700;
-}
-	.modal-dialog.lawyer-sheet-form{
-		width:40%}
+	padding-top:15px;}
+	
+	
+	#results .lawyer-sheet{
+		border: 1px solid #e3e3e3;
+		box-shadow: 1px 1px 0 #e3e3e3;
+			-webkit-box-shadow: 1px 1px 0 #e3e3e3;
+			-moz-box-shadow: 1px 1px 0 #e3e3e3;
+			-o-box-shadow: 1px 1px 0 #e3e3e3;
+		padding: 7px;
+		background-color: #f5f5f5;
+		color:#333;
+		margin-bottom:15px;}
+		
+		#results .lawyer-sheet .btn{
+			padding:5px !important;}
+		
+		#results .lawyer-sheet img{
+			padding:7px;
+			background-color:#fff;}
+		#results .lawyer-sheet h4{
+			color:#015b8b;
+			font-family:chaparral;
+			font-weight:700;
+			margin-top:7px;}
+			
+			.modal-dialog.lawyer-sheet{
+				width:400px;}
+				.modal-dialog.lawyer-sheet h4{
+					color:#015b8b;
+					font-family:chaparral;
+					font-weight:700;}
+				.modal-dialog.lawyer-sheet-form{
+					width:40%}
 
 
 		
 /* form */
 #block_form{
-	padding-top:15px; }
+	padding-top:15px;
+	padding-bottom:25px}
 	#block_form .list-group-item-heading,
 	.lawyer-sheet-form .list-group-item-heading {
 		padding:0; }
@@ -531,7 +543,45 @@ aside{}
 		}
 
 
+/*AUTOCOMPLETE INPUT v1*/
+.twitter-typeahead{
+	width:100%;}
+.typeahead {
+	color:#555;
+	border: 1px solid #ccc;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;}
+.tt-hint {
+	color: #999999;}
+	
+.typeahead, .tt-hint{
+	height: 35px !important;
+	padding: 8px 10px;
+	display: block;
+	width: 100%;
+	font-size: 14px;}
 
+.tt-dropdown-menu {
+	text-align: left;
+	background-color: #FFFFFF;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-top: 12px;
+	padding: 8px 0;
+	width: 325px;
+	color:#000;
+	max-height: 150px;
+	overflow-y: auto;}
+.tt-suggestion {
+	font-size: 14px;
+	line-height: 24px;
+	padding: 3px 5px;}
+.tt-suggestion.tt-is-under-cursor {
+	background-color: #0097CF;
+	color: #FFFFFF;}
+.tt-suggestion p {
+	margin: 0;}
 
 /*ICONS*/
 [class^="icon-"]{display:inline-block;width:auto;height:auto;line-height:normal;vertical-align:baseline;background-image:none;background-position:0% 0%;background-repeat:repeat;margin-top:0;width:26px;height:20px;margin-right:5px;margin-bottom:-5px;}
@@ -575,6 +625,9 @@ aside{}
 		font-size: 3em;
 		margin: 20% 0;
 	}
+		
+		#search-lawyer.v2 .aligncenter p:first-child{
+			line-height:5em;}
 	
 	#footer div.col-xs-6{
 		margin-bottom:20px;
