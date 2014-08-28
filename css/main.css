@@ -255,7 +255,7 @@ legend{
 		float: none;}
 		
 		#search-lawyer.v2 .aligncenter p:first-child{
-			line-height:10em;}
+			margin-top: 6.4em;}
 		#search-lawyer.v2 .aligncenter p:last-child a{
 			color:#fff;}
 
@@ -372,7 +372,6 @@ address{
 #results{
 	padding-top:15px;}
 	
-	
 	#results .lawyer-sheet{
 		border: 1px solid #e3e3e3;
 		box-shadow: 1px 1px 0 #e3e3e3;
@@ -405,7 +404,26 @@ address{
 				.modal-dialog.lawyer-sheet-form{
 					width:40%}
 
-
+/*SEO PAGES*/
+#seo-page .content{
+	text-align:left;
+	background-color:#ececec;
+	margin-bottom:20px !important;
+	padding-bottom: 20px;
+	margin-right:0 !important;}
+	
+	#seo-page .content h2{
+		padding: 0 !important;
+		margin-bottom: 10px;}
+	
+#seo-page img{
+	border:1px solid #ababab;
+	padding:7px;
+	background-color:#fff;}
+	
+#seo-page li{
+	line-height: 2em;
+}
 		
 /* form */
 #block_form{
@@ -569,13 +587,13 @@ aside{}
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	margin-top: 12px;
 	padding: 8px 0;
-	width: 325px;
+	width: 440px;
 	color:#000;
 	max-height: 150px;
 	overflow-y: auto;}
 .tt-suggestion {
 	font-size: 14px;
-	line-height: 24px;
+	/*line-height: 24px;*/
 	padding: 3px 5px;}
 .tt-suggestion.tt-is-under-cursor {
 	background-color: #0097CF;
@@ -619,6 +637,14 @@ aside{}
 	padding-left:40px;
 }
 
+/* Tablet SM */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+		#search-lawyer.v2 .aligncenter p:first-child{
+			margin-top: 0.4em;}
+}
+
+
 /* Mobile XS */
 @media only screen and (max-width: 767px) {
 	#search-lawyer h1{
@@ -627,7 +653,7 @@ aside{}
 	}
 		
 		#search-lawyer.v2 .aligncenter p:first-child{
-			line-height:5em;}
+			margin-top: 0.4em;}
 	
 	#footer div.col-xs-6{
 		margin-bottom:20px;

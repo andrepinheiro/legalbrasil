@@ -34,43 +34,46 @@
     <section id="search-lawyer" class="v2">
 		
 		<div class="container">
-				<div class="row row-centered">
-					<h1>Conecte-se com advogados em todo Brasil!</h1>
-					<h4>De forma rápida, eficiente e gratuita nós te ajudamos a encontrar o advogado que atua na área que você necessita</h4>
-				</div>
-				<form role="form" onsubmit="return false;" action="">
-					<div class="row row-centered">
-						<div class="col-md-6" style="padding-left:30px;">
-							
-							<div class="row">
-								<div class="col-md-12">
-									<div class="form-group text-left">
-										<label class="control-label">Indique o seu problema</label>
-										<input type="text" id="subcategory" class="typeahead tt-query" autocomplete="off" spellcheck="false">
-									</div>
-								</div>
-							</div>
-							
-							<div class="row">
-								<div class="col-md-6">
-							<div class="form-group text-left">
-										<label class="control-label">Indique o Estado</label>
-										<input type="text" id="state" class="typeahead tt-query" autocomplete="off" spellcheck="false">
-									</div>
-								</div>
-								<div class="col-md-6">
-							<div class="form-group text-left">
-										<label class="control-label">Indique a Cidade</label>
-										<input type="text" id="city" class="typeahead tt-query" autocomplete="off" spellcheck="false">
-									</div>
+			<div class="row row-centered">
+				<h1>Conecte-se com advogados em todo Brasil!</h1>
+				<h4>De forma rápida, eficiente e gratuita nós te ajudamos a encontrar o advogado que atua na área que você necessita</h4>
+			</div>
+			<form role="form" onsubmit="return false;" action="">
+				<div class="row row-centered aligncenter pull-right">
+				
+					<div class="col-md-6">
+						
+						<div class="row">
+							<div class="col-md-12">
+								<div class="form-group text-left">
+									<label class="control-label">Indique o seu problema</label>
+									<input type="text" id="subcategory" class="typeahead tt-query" autocomplete="off" spellcheck="false">
 								</div>
 							</div>
 						</div>
-						<div class="col-md-6 aligncenter">
-							<p><a href="form.html" class="btn btn-lg btn-default">Continuar <span class="glyphicon glyphicon-chevron-right"></span></a></p>
-							<!-- <p><a href="lawyers-results.html">(Consultar Glossário de advogados)</a></p> -->
+						
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group text-left">
+									<label class="control-label">Indique o Estado</label>
+									<input type="text" id="state" class="typeahead tt-query" autocomplete="off" spellcheck="false">
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group text-left">
+									<label class="control-label">Indique a Cidade</label>
+									<input type="text" id="city" class="typeahead tt-query" autocomplete="off" spellcheck="false">
+								</div>
+							</div>
 						</div>
+						
+					</div><!--/.col-md-6 .aligncenter-->
+					
+					<div class="col-md-3">
+						<p><a href="form.html" class="btn btn-lg btn-default">Continuar <span class="glyphicon glyphicon-chevron-right"></span></a></p>
+						<!-- <p><a href="lawyers-results.html">(Consultar Glossário de advogados)</a></p> -->
 					</div>
+				</div><!--/.row .row-centered-->
 			</form>
 		</div>
 		
@@ -348,7 +351,7 @@
 
 			$('#state').typeahead({
 				minLength: 1,
-				hint: false,
+				hint: true,
 				highlight: false
 			}, {
 				displayKey: 'displayValue',
@@ -357,7 +360,7 @@
 
 			$('#city').typeahead({
 				minLength: 1,
-				hint: false,
+				hint: true,
 				highlight: false
 			}, {
 				displayKey: 'displayValue',
