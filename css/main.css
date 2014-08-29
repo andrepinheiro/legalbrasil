@@ -416,7 +416,7 @@ address{
 			padding: 0 !important;
 			margin-bottom: 10px;}
 		
-	#seo-page img{
+	#seo-page .content img{
 		border:1px solid #ababab;
 		padding:7px;
 		background-color:#fff;}

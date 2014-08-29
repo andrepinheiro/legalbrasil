@@ -38,7 +38,6 @@
 				<h1>Conecte-se com advogados especializados em Contratos!</h1>
 				<h4>De forma rápida, eficiente e gratuita nós te ajudamos a encontrar o advogado que atua na área que você necessita</h4>
 			</div>
-			<?php include("../../form-header.php"); ?>
 		</div>
 		
     </section><!--/#search-lawyer-->
@@ -52,11 +51,14 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					
-                    <div class="col-md-12">
-					
+                    <div class="col-md-8">
 						<?php include("../../form-lead.php"); ?>
-
                     </div>
+			    
+					<aside class="col-md-4 hidden-xs hidden-sm">
+						<img src="./js/holder.js/380x135/text:Precisa de ajuda?" class="img-responsive">
+						<img src="./js/holder.js/380x135/text:Sobre nós" class="img-responsive">
+					</aside>
                     
                 </div><!--/.row-->
             </div><!--/.box-->
@@ -87,6 +89,7 @@
 
     <script type="text/javascript" src="../../js/jquery.js"></script>
     <script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/holder.js"></script>
 	<script type="text/javascript" src="../../js/typeahead.bundle.min.js"></script>
 	<script type="text/javascript" src="../../js/script.js"></script>
 	
