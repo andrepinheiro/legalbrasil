@@ -96,7 +96,9 @@
 		<div class="form-group col-xs-12 col-md-12">
 			<textarea class="form-control" placeholder="Conte-nos brevemente sobre seu caso e do que necessita" rows="4"></textarea>
 		</div>
-		<button type="submit" id="activate-step-2" class="btn btn-lg btn-default pull-right">Próximo <span class="glyphicon glyphicon-chevron-right"></span></button>
+		<div class="col-md-12">
+			<button type="submit" id="activate-step-2" class="btn btn-lg btn-default pull-right">Próximo <span class="glyphicon glyphicon-chevron-right"></span></button>
+		</div>
 	</div><!--/#step-1 -->
 
 	<div class="row setup-content" id="step-2">

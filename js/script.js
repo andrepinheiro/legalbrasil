@@ -1,10 +1,5 @@
 $(document).ready(function(){
 
-	$('#subcategory-2').typeahead({
-		name: 'accounts',
-		local: ['Ações de despejo', 'Cobrança de condomínio', 'Código de Proteção e Defesa do Consumidor', 'Direito Homoafetivo', 'Recuperação de créditos', 'Violação da privacidade', 'Indenizações por danos materiais e morais', 'Falência', 'Guarda judicial']
-	});
-
 	var charMap = {
 		"à": "a",
 		"á": "a",

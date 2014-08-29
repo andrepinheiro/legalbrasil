@@ -254,10 +254,8 @@ legend{
 		vertical-align: middle;
 		float: none;}
 		
-		#search-lawyer.v2 .aligncenter p:first-child{
-			margin-top: 6.4em;}
-		#search-lawyer.v2 .aligncenter p:last-child a{
-			color:#fff;}
+		#search-lawyer.v2 form .btn{
+			margin-bottom: 10px;}
 
 /* global */
 .box {
@@ -631,6 +629,11 @@ aside{}
 	padding-bottom: 30px;
 	color: #999;
 }
+	footer .aligncenter{
+	display: inline-block;
+	vertical-align: middle;
+	float: none;}
+	
 #footer a {
   color: #999;
 }
@@ -646,15 +649,13 @@ aside{}
 	height:100px;
 	padding-left:40px;
 }
+#footer div.col-sm-4:nth-last-child(1){
+	vertical-align: top;
+	margin-top: 10px;
+}
 
 /* Tablet SM */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-
-		#search-lawyer.v2 .row.row-centered.aligncenter.pull-right{
-			float:none !important;}
-			#search-lawyer.v2 .aligncenter p:first-child{
-				margin-top: 0.4em;}
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
 
 
 /* Mobile XS */
@@ -663,9 +664,6 @@ aside{}
 		font-size: 3em;
 		margin: 20% 0;
 	}
-		
-		#search-lawyer.v2 .aligncenter p:first-child{
-			margin-top: 0.4em;}
 	
 	#footer div.col-xs-6{
 		margin-bottom:20px;
@@ -677,6 +675,4 @@ aside{}
 		border:none;
 	}
 
-		#search-lawyer.v2 .row.row-centered.aligncenter.pull-right{
-			float:none !important;}
 }

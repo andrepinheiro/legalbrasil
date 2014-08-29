@@ -49,7 +49,7 @@
             <div class="box first">
                 <div class="row row-centered">
 					<div class="col-md-12 title col-centered">
-						<h2>Profissionais qualificados em todas as áreas do Direito</h2>
+						<h2>Advogados qualificados em todas as áreas do Direito</h2>
 					</div>
                     <div class="col-xs-12 col-md-4 col-sm-6 col-centered col-fixed">
 						<a href="./direito-civil"><img src="./images/services/direito-civil.jpg" class="img-responsive" />
@@ -67,7 +67,7 @@
                     </div><!--/.col-md-4-->
                     <div class="col-xs-12 col-md-4 col-sm-6 col-centered col-fixed">
 						<a href="./societario"><img src="./images/services/societario.jpg" class="img-responsive" />
-						<h4>Societario</h4></a>
+						<h4>Direito Societario</h4></a>
 						<ul>
 							<li><a href="./societario/constituição-sociedade">Constituição de sociedade</a></li>
 							<li><a href="./societario/dissolução-sociedade">Dissolução sociedade</a></li>
@@ -107,7 +107,7 @@
 							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
-							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="#" class="btn btn-default">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
                     </div><!--/.col-md-4-->
                     <div class="col-xs-12 col-md-4 col-sm-6 col-centered col-fixed">
@@ -121,7 +121,7 @@
 							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
-							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="#" class="btn btn-default">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
                     </div><!--/.col-md-4-->
                     <div class="col-xs-12 col-md-4 col-sm-6 col-centered col-fixed">
@@ -135,7 +135,7 @@
 							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
-							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="#" class="btn btn-default">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
                     </div><!--/.col-md-4-->
 					
@@ -152,7 +152,7 @@
 							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
-							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="#" class="btn btn-default">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
                     </div><!--/.col-md-4-->
                     <div class="col-xs-12 col-md-4 col-sm-6 col-centered col-fixed">
@@ -166,7 +166,7 @@
 							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
-							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="#" class="btn btn-default">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
                     </div><!--/.col-md-4-->
                     <div class="col-xs-12 col-md-4 col-sm-6 col-centered col-fixed">
@@ -180,21 +180,13 @@
 							<li><a href="#">Mais</a></li>
 						</ul>
 						<div class="align-right">
-							<a href="./modal/direito-civil.html" class="btn btn-default" data-toggle="modal" data-target="#remoteModal">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
+							<a href="#" class="btn btn-default">Saiba mais <span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
                     </div><!--/.col-md-4-->
                 </div><!--/.row-->
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#services-->
-
-	<!-- Modal -->  
-	<div class="modal fade" id="remoteModal" tabindex="-1" role="dialog" aria-labelledby="remoteModalLabel" aria-hidden="true">  
-	    <div class="modal-dialog">  
-	        <div class="modal-content modal-dialog-center"></div>
-	    </div>  
-	</div>  
-	<!-- /.modal -->  
 
     <footer id="footer">
         <div class="container">
@@ -209,9 +201,10 @@
 						<li><i class="icon-privacy"></i> <a href="#">Política de privacidade</a></li>
 					</ul>
                 </div>
-                <div class="col-sm-4 col-centered text-center">
-                    <h4>Você é um profissional?</h4>
-					<a href="lawyers-subscription.html">Inscreva-se aqui e conheça as vantagens<br/>de fazer parte de nossa rede de especialistas</a>
+                <div class="col-sm-4 col-centered">
+					<ul class="list-unstyled text-left">
+						<li><a href="lawyers-results.html">Consultar Glossário de advogados</a></li>
+					</ul>
                 </div>
             </div>
         </div>

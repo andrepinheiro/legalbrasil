@@ -35,12 +35,10 @@
 		
 		<div class="container">
 			<div class="row row-centered">
-				<h1>Conecte-se com advogados em Direito civil!</h1>
+				<h1>Conecte-se com advogados de Direito civil!</h1>
 				<h4>De forma rápida, eficiente e gratuita nós te ajudamos a encontrar o advogado que atua na área que você necessita</h4>
 			</div>
-				<div class="row row-centered aligncenter pull-right">
-					<?php include("../form-header.php"); ?>
-				</div><!--/.row .row-centered-->
+			<?php include("../form-header.php"); ?>
 		</div>
 		
     </section><!--/#search-lawyer-->
@@ -50,7 +48,7 @@
             <div class="box first">
                 <div class="row">
 					<div class="col-md-12 content">
-						<h2>Profissionais qualificados em Direito civil</h2>
+						<h2>Advogados qualificados em Direito civil</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</div>
 					
@@ -102,9 +100,10 @@
 						<li><i class="icon-privacy"></i> <a href="#">Política de privacidade</a></li>
 					</ul>
                 </div>
-                <div class="col-sm-4 col-centered text-center">
-                    <h4>Você é um profissional?</h4>
-					<a href="lawyers-subscription.html">Inscreva-se aqui e conheça as vantagens<br/>de fazer parte de nossa rede de especialistas</a>
+                <div class="col-sm-4 col-centered">
+					<ul class="list-unstyled text-left">
+						<li><a href="../lawyers-results.html">Consultar Glossário de advogados</a></li>
+					</ul>
                 </div>
             </div>
         </div>
