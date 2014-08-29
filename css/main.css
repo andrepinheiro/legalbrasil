@@ -399,8 +399,6 @@ address{
 					color:#015b8b;
 					font-family:chaparral;
 					font-weight:700;}
-				.modal-dialog.lawyer-sheet-form{
-					width:40%}
 
 /*SEO PAGES*/
 #seo-page{
@@ -654,8 +652,11 @@ aside{}
 	margin-top: 10px;
 }
 
-/* Tablet SM */
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+/* Desktop MD */
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	.modal-dialog.lawyer-sheet-form{
+		width:60%}
+}
 
 
 /* Mobile XS */
